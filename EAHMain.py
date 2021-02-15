@@ -19,5 +19,4 @@ employee_id_list = employee_id_gen.generate_id_list()
 now_time = time.strftime('%Y-%m-%d', time.localtime(time.time()))
 
 with open(company_name + '_candidate_id_list' + now_time + '.txt', 'w') as result_file:
-    for employee_id in employee_id_list:
-        result_file.write(employee_id)
+    result_file.writelines(employee_id_list)

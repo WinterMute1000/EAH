@@ -12,10 +12,10 @@ class IDGeneratorByName:
             number_list = [num for num in range(1, 101)]
 
             for number in number_list:
-                self.id_list.append(first_name + last_name + str(number))
-                self.id_list.append(first_name[:1] + last_name + str(number))
-                self.id_list.append(first_name + last_name[:1] + str(number))
-                self.id_list.append(first_name[:1] + last_name[:1] + str(number))
+                self.id_list.append(first_name + last_name + str(number)+'\n')
+                self.id_list.append(first_name[:1] + last_name + str(number)+'\n')
+                self.id_list.append(first_name + last_name[:1] + str(number)+'\n')
+                self.id_list.append(first_name[:1] + last_name[:1] + str(number)+'\n')
 
         return self.id_list
 
